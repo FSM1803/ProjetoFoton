@@ -1,0 +1,5 @@
+<!-- rounded_imageview.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="100dp" /> <!-- Metade do valor da largura/altura para fazer um círculo -->
+    <solid android:color="#FFFFFF" /> <!-- Cor de fundo, se necessário -->
+</shape>
