@@ -102,8 +102,10 @@
         android:background="@drawable/borderradius_edittext"
         android:ems="10"
         android:hint="Data de nascimento"
-        android:inputType="phone"
+        android:inputType="date"
+        android:maxLength="10"
         android:padding="8dp"
+        android:textColor="@color/white"
         android:textColorHint="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -121,6 +123,7 @@
         android:hint="Sobrenome"
         android:inputType="text"
         android:padding="8dp"
+        android:textColor="@color/white"
         android:textColorHint="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -181,17 +184,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/buscar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="677dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/cardview_dark_background"
-        android:text="buscar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
         android:id="@+id/cep"
         android:layout_width="314dp"
@@ -205,13 +197,29 @@
         android:inputType="number"
         android:maxLength="9"
         android:padding="8dp"
+        android:textColor="@color/white"
         android:textColorHint="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/numero"
+        android:layout_width="85dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="664dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Número"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/telefone"
         android:layout_width="314dp"
         android:layout_height="43dp"
         android:layout_marginStart="57dp"
@@ -222,6 +230,7 @@
         android:hint="Telefone"
         android:inputType="phone"
         android:padding="8dp"
+        android:textColor="@color/white"
         android:textColorHint="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -239,13 +248,14 @@
         android:hint="Nome"
         android:inputType="text"
         android:padding="8dp"
+        android:textColor="@color/white"
         android:textColorHint="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/voltar"
         android:layout_width="58dp"
         android:layout_height="30dp"
         android:layout_marginStart="5dp"

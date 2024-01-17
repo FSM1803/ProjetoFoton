@@ -8,27 +8,26 @@
     android:background="@color/cardview_dark_background"
     tools:context=".MainActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ContatoRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/linha_de_contatos" />
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/botão2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="100dp"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/baseline_add_location_24" />
-
-    <SearchView
-        android:layout_width="363dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/borderradius"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/mais" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
