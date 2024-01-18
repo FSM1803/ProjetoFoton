@@ -23,8 +23,7 @@ public class AdapterContact extends RecyclerView.Adapter<AdapterContact.ContactV
     private ArrayList<ModelContact> contactList;
     private DBHelper dbHelper;
 
-    // add constructor
-    // alt + ins
+
 
     public AdapterContact(Context context, ArrayList<ModelContact> contactList) {
         this.context = context;
@@ -45,8 +44,7 @@ public class AdapterContact extends RecyclerView.Adapter<AdapterContact.ContactV
 
         ModelContact modelContact = contactList.get(position);
 
-        //get data
-        //we need only All data
+
         String id = modelContact.getId();
         String nome = modelContact.getNome();
         String telefone= modelContact.getTelefone();
@@ -57,9 +55,6 @@ public class AdapterContact extends RecyclerView.Adapter<AdapterContact.ContactV
         String bairro = modelContact.getBairo();
         String rua = modelContact.getRua();
 
-        //set data in view
-
-        //handle click listener
         holder.contactDial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,17 +79,6 @@ public class AdapterContact extends RecyclerView.Adapter<AdapterContact.ContactV
         public ContactViewHolder(@NonNull View itemView) {
             super(itemView);
 
-
-            //init view
-/*
-
-
-            contactDial = itemView.findViewById(R.id.contact_number_dial);
-            NomeContato = itemView.findViewById(R.id.nome);
-            contactDelete = itemView.findViewById(R.id.contact_delete);
-            contactEdit = itemView.findViewById(R.id.contact_edit);
-            relativeLayout = itemView.findViewById(R.id.mainLayout);
-             */
 
         }
     }
