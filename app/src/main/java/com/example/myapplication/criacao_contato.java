@@ -72,8 +72,10 @@ public class criacao_contato extends AppCompatActivity {
         criar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Chama o método para realizar a consulta
-                    consultarCEP();
+                Intent intent = new Intent(criacao_contato.this, Teladetelhe.class);
+
+                startActivity(intent);
+
             }
         });
 
@@ -86,13 +88,6 @@ public class criacao_contato extends AppCompatActivity {
             }
         });
 
-
-        criar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                saveDate();
-            }
-        });
 
 
 

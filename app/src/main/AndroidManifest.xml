@@ -15,6 +15,15 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".AlterarContato"
+            android:exported="false" />
+        <activity
+            android:name=".TelaDetalhe2"
+            android:exported="false" />
+        <activity
+            android:name=".Teladetelhe"
+            android:exported="false" />
+        <activity
             android:name=".criacao_contato"
             android:exported="false" />
         <activity
